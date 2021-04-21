@@ -3,6 +3,7 @@
 [SLURM workload manager](https://en.wikipedia.org/wiki/Slurm_Workload_Manager) is used widely to schedule jobs on the server.
 The service is used by several users, and it can be time consuming to know the useful commands.
 I have been using some of these commands quite frequently to monitor jobs and notify via app notifications when the jobs are finished.
+It prevents a lot of work interruption, because I only have to check the server once I get a notification. 
 
 
 ## Installation
