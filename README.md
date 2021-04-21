@@ -1,8 +1,8 @@
 Add these three variables to your .bashrc -
 
-JOB_LOG_DIR=/home/pratgupt/scratch/job_logs
-IFTT_KEY=bWbfU3onmGUzRU3B-DVmH-
-SERVER_NAME=beluga
+export JOB_LOG_DIR=/home/pratgupt/scratch/job_logs
+export IFTT_KEY=bWbfU3onmGUzRU3B-DVmH-
+export SERVER_NAME=beluga
 
 
 Following are the commands -
