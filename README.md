@@ -7,6 +7,7 @@ I have been using some of these commands quite frequently to monitor jobs and no
 
 ## Installation
 
+Note: An environment variable `$USER` is assumed to be available. This variable will be used to check for the jobs in the queue. For example, `squeue -u $USER`
 
 1. Clone this repo in your `~/bin` directory, and add this to your `$PATH`.
 
