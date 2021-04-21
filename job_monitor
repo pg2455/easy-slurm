@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# read -a arr # takes input in the next line
+# echo ${#arr[@]}
+
+get_n_jobs () {
+  x=$(sq -u $USER | grep "$1" | wc -l)
+  echo $x
+}
+
+n_jobs=$( get_n_jobs $1 )
+while [ $n_jobs -ne 0 ]
+do
+  sleep 15m
+  n_jobs=$( get_n_jobs $1 )
+done
+
+notify "'$SERVER_NAME' - no more jobs of '$1' left"

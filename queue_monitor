@@ -1,0 +1,11 @@
+#!/bin/bash
+lower_limit=$1
+
+n_jobs=$(echo $(count_jobs))
+while [ $n_jobs -gt $lower_limit ]
+do
+  sleep 15m
+  n_jobs=$(echo $(count_jobs))
+done
+
+notify "'$SERVER_NAME' has $n_jobs left"

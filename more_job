@@ -1,0 +1,1 @@
+more $JOB_LOG_DIR/slurm-$1.out | less

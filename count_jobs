@@ -1,0 +1,13 @@
+n_jobs_plus_one=$(echo $(squeue -u $USER | wc -l))
+n_jobs=$(echo $(($n_jobs_plus_one - 1)))
+
+while [ $n_jobs -lt 0 ]
+do
+  sleep 15m
+  #
+  # echo "server timed out will run it back in 15 minutes"
+  n_jobs_plus_one=$(echo $(squeue -u $USER | wc -l))
+  n_jobs=$(echo $(($n_jobs_plus_one - 1)))
+done
+
+echo $n_jobs
