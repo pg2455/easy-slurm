@@ -4,11 +4,13 @@
 # echo ${#arr[@]}
 
 get_n_jobs () {
-  x=$(sq -u $USER | grep "$1" | wc -l)
+  x=$("$2" -u $USER | grep "$1" | wc -l)
   echo $x
 }
 
-n_jobs=$( get_n_jobs $1 )
+PROCESS=${2:-"sq"}
+
+n_jobs=$( get_n_jobs $1 $PROCESS)
 while [ $n_jobs -ne 0 ]
 do
   sleep 15m
