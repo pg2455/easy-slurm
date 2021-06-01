@@ -15,7 +15,7 @@ Note: An environment variable `$USER` is assumed to be available. This variable 
 ```bash
 mkdir ~/bin && cd ~/bin && git clone https://github.com/pg2455/easy-slurm.git && cd ~
 echo "export PATH=$PATH:~/bin/easy-slurm" >> ~/.bashrc
-source ./.bashrc
+source ~/.bashrc
 ```
 
 2. (optional) To setup notifications using [IFTT](https://ifttt.com/), follow these steps -
