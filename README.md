@@ -15,7 +15,7 @@ Note: An environment variable `$USER` is assumed to be available. This variable 
 ```bash
 mkdir ~/bin && cd ~/bin && git clone https://github.com/pg2455/easy-slurm.git && cd ~
 echo "export PATH=$PATH:~/bin/easy-slurm" >> ~/.bashrc
-source ./.bashrc
+source ~/.bashrc
 ```
 
 2. (optional) To setup notifications using [IFTT](https://ifttt.com/), follow these steps -
@@ -31,7 +31,7 @@ export IFTT_KEY=bWbfU3onmGUzRU3B-DVmH- # (optional)
 export SERVER_NAME=beluga # (optional) server name needed for notificaitons. Its useful if you are pushing notifications from several servers.
 ```
 
-If you are in a `tmux` screen, don't forget to source this bash script using `source ./bashrc`.
+If you are in a `tmux` screen, don't forget to source this bash script using `source ~/.bashrc`.
 
 ## Commands
 
