@@ -31,7 +31,7 @@ export IFTT_KEY=bWbfU3onmGUzRU3B-DVmH- # (optional)
 export SERVER_NAME=beluga # (optional) server name needed for notificaitons. Its useful if you are pushing notifications from several servers.
 ```
 
-If you are in a `tmux` screen, don't forget to source this bash script using `source ./bashrc`.
+If you are in a `tmux` screen, don't forget to source this bash script using `source ~/.bashrc`.
 
 ## Commands
 
