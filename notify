@@ -1,4 +1,5 @@
 #!/bin/bash
 arg=$(echo $USER - $1 | sed 's/ /%20/g')
 # arg=$1
-curl -s -o /dev/null "https://maker.ifttt.com/trigger/job-monitor/with/key/${IFTT_KEY}?value1=$arg"
+# curl -s -o /dev/null "https://maker.ifttt.com/trigger/job-monitor/with/key/${IFTT_KEY}?value1=$arg"
+curl -s -o /dev/null "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage?chat_id=${TG_CHAT_ID}&text=$arg"
