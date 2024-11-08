@@ -58,6 +58,13 @@
 > queue_monitor 0 &
 > ```
 
+
+> **Tip**: If you want to be notified when job with certain keywords are finished, use:
+>
+> ```bash
+> job_monitor <keyword> &
+> ```
+
 This will allow you to continue working while receiving a notification when all jobs in the queue have completed.
 
 These commands are designed to simplify common SLURM tasks, making it easier to monitor and manage jobs with minimal manual checking.
